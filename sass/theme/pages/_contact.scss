@@ -1,0 +1,17 @@
+.contact-container {
+	margin: 6rem 0;
+}
+
+.form-input-name,
+.form-input-email,
+.form-input-message {
+	margin-bottom: 1rem !important;
+}
+
+.form-input-submit {
+	font-size: 1.2em !important;
+	border-radius: 5px !important;
+	background: #efefef !important;
+	padding: 1.2rem !important;
+	font-family: $font-serif;
+}

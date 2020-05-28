@@ -1,0 +1,153 @@
+.preloader {
+	background: none no-repeat scroll center bottom #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.preloader .content {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.preloader .pr-wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -265px 0 0 -265px;
+
+	@media (max-width: 767px) {
+		margin: -280px 0 0 -280px;
+	}
+}
+
+.preloader .pr-wrap div {
+	background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
+	width: 10px;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.8s ease 0s;
+
+	@media (max-width: 767px) {
+		transform: scale(0.55);
+	}
+}
+
+.preloader .pr-logo {
+	opacity: 0.3;
+	z-index: 9;
+}
+
+.preloader .pr-wrap .pr-logo-status {
+	width: 0;
+	z-index: 99;
+}
+
+.preloader.start .pr-logo-status {
+	width: 530px;
+}
+
+.loader-border:before,
+.loader-border:after,
+.loader-border span:before,
+.loader-border span:after {
+	background: #000;
+	display: block;
+	content: "";
+	position: absolute;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.loader-border:before,
+.loader-border:after {
+	animation-name: borderwidth;
+	height: 3px;
+	width: 0;
+}
+
+.loader-border:before {
+	top: 0;
+	left: 0;
+}
+
+.loader-border:after {
+	top: auto;
+	left: auto;
+	bottom: 0;
+	right: 0;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.loader-border span:before,
+.loader-border span:after {
+	height: 0;
+	width: 3px;
+	animation-name: borderheight;
+}
+
+.loader-border span:before {
+	top: 0;
+	left: auto;
+	right: 0;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.loader-border span:after {
+	top: auto;
+	bottom: 0;
+	left: 0;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+@-webkit-keyframes borderwidth {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes borderwidth {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes borderheight {
+	from {
+		height: 0;
+	}
+
+	to {
+		height: 100%;
+	}
+}
+
+@keyframes borderheight {
+	from {
+		height: 0;
+	}
+
+	to {
+		height: 100%;
+	}
+}

@@ -1,0 +1,40 @@
+@import "preloader";
+
+.grey-btn {
+	padding: 1rem;
+	font-size: 1.1rem;
+	background-color: rgb(110, 110, 110);
+	margin: 1rem;
+	color: white;
+}
+
+.link-btn {
+	position: relative;
+	color: #000;
+	font-size: 1.3rem;
+	font-weight: 600;
+
+	&:hover {
+		color: #000;
+		text-decoration: none;
+		opacity: 0.8;
+
+		&::before {
+			width: 100%;
+			background-color: #3e5c8a;
+		}
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 20%;
+		height: 3px;
+		bottom: -7px;
+		left: 0;
+		right: 0;
+		position: absolute;
+		transition: all 0.2s ease;
+		background-color: #000000;
+	}
+}

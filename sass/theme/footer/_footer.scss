@@ -1,0 +1,37 @@
+#wrapper-footer {
+	background-color: rgb(241, 241, 241);
+	border-top: rgb(88, 88, 88) 2px solid;
+	padding: 30px 0 20px 0;
+
+	.footer-nav {
+		ul {
+			padding: 0;
+			li {
+				list-style: none;
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+				transition: all 0.3s ease;
+				font-family: $font-serif;
+
+				&:hover {
+					transform: translateX(5px);
+				}
+
+				a {
+					color: #000;
+					transition: all 0.3s ease;
+
+					&:hover {
+						text-decoration: none;
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+
+	p {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+	}
+}

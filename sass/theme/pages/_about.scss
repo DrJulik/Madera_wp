@@ -1,0 +1,55 @@
+.hero-image {
+	height: 330px;
+	border-bottom: 2px solid rgb(0, 16, 82);
+	// margin-bottom: 5rem;
+
+	@media (max-width: 767px) {
+		height: 250px;
+	}
+
+	.wp-block-group__inner-container {
+		height: 100%;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.3) 0%,
+			rgba(227, 227, 227, 0.1) 100%
+		);
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		// object-fit: contain;
+	}
+}
+
+.about-image {
+	img {
+		box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+	}
+
+	@media (max-width: 781px) {
+		display: none;
+	}
+}
+
+.image-block {
+	@media (max-width: 781px) {
+		display: none;
+	}
+}
+
+.text-block {
+	@media (max-width: 781px) {
+		flex-basis: 100%;
+	}
+}

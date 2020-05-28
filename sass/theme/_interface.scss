@@ -1,0 +1,30 @@
+body {
+	background-color: $bg-color;
+	font-family: $font-sans;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-serif;
+}
+
+// padding to match the height of the fixed header
+.main-wrapper {
+	padding-top: 7%;
+}
+
+// Any container with this class will be full width
+.full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	overflow: hidden;
+}
